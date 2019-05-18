@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail';
 import faker from 'faker';
+import ApprovalCard from './ApprovalCard';
 
-// This is a parent component
+// This is the parent component
 
 const App = () => {
   return (
     <div className="ui container comments">
-      {/* CommmentDetail prop="value" */}
+      <ApprovalCard />
+      {/* CommmentDetail 
+          prop="value" */}
       <CommentDetail 
         author="Babs" 
         timeStamp="Today at 5:00pm" 
